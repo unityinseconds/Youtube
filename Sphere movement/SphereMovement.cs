@@ -3,8 +3,9 @@ using UnityEngine.InputSystem;
 
 public class SphereMovement : MonoBehaviour
 {
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     [Header("Movement Settings")]
-    public float moveSpeed = 5f;
+    [SerializeField] private float moveSpeed = 5f;
 
     private Vector2 moveInput;
     private Rigidbody rb;
